@@ -10,15 +10,11 @@ In order to achieve age conversion, we have been using two deep learning based v
 
 <table>
   <tr>
-    <th>TASK</th>
-    <th>MODEL</th>
     <th>SOURCE</th>
     <th>CONVERTED</th>
   </tr>
 
   <tr>
-    <td>de-age</td>
-    <td>CycleGANVC</td>
     <td><audio controls src="audio/cgvc.mp3">
     </audio></td>
     <td><audio controls src="audio/cgvc.mp3">
@@ -26,8 +22,6 @@ In order to achieve age conversion, we have been using two deep learning based v
   </tr>
 
   <tr>
-    <td>conversion</td>
-    <td>VQVAE</td>
     <td><audio controls src="audio/vqvaeout.mp3">
     </audio></td>
     <td><audio controls src="audio/vqvaeout.mp3">
