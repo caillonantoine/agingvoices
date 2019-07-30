@@ -8,5 +8,29 @@ In movie production, there has been a lot of work finding ways to **age** or **d
 In order to achieve age conversion, we have been using two deep learning based voice conversion models called **CycleGAN VC** and **Vector-Quantised Variational Auto-Encoder**, both being modified with ~~CONFIDENTIAL INFORMATIONS, COMING SOON~~.
 
 
-<audio controls src="audio/cgvc.mp3"></audio>
-<audio controls src="audio/vqvaeout.mp3"></audio>
+<table>
+  <tr>
+    <th>TASK</th>
+    <th>MODEL</th>
+    <th>SOURCE</th>
+    <th>CONVERTED</th>
+  </tr>
+
+  <tr>
+    <td>de-age</td>
+    <td>CycleGANVC</td>
+    <td><audio controls src="audio/cgvc.mp3">
+    </audio></td>
+    <td><audio controls src="audio/cgvc.mp3">
+    </audio></td>
+  </tr>
+
+  <tr>
+    <td>conversion</td>
+    <td>VQVAE</td>
+    <td><audio controls src="audio/vqvaeout.mp3">
+    </audio></td>
+    <td><audio controls src="audio/vqvaeout.mp3">
+    </audio></td>
+  </tr>
+</table>
