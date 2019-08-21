@@ -15,17 +15,19 @@
 
       <p>In movie production, there has been a lot of work finding ways to age or de-age an actor's face, in order to match his character's age. Lots of techniques like digital or practical makeup, 3D modeling of the entire head have been used in order to achieve convincing age modification. Recently, deep learning based methods have been released allowing to transfer and manipulate parameters like gender or age directly on images.</p>
 
-      <p>In order to achieve age conversion, we have been using two deep learning based voice conversion models called CycleGAN VC and Vector-Quantised Variational Auto-Encoder, both being modified with CONFIDENTIAL INFORMATIONS, COMING SOON.</p>
+      <p>In order to achieve age conversion, we have been using two deep learning based voice conversion models called CycleGAN VC and Vector-Quantised Variational Auto-Encoder.</p>
 
       <table>
         <tr>
           <th>MODEL</th>
+          <th>TASK</th>
           <th>SOURCE</th>
           <th>CONVERTED</th>
         </tr>
 
         <tr>
-          <td>cgvcrnd</td>
+          <td>CGVC RND</td>
+          <td>de-aging</td>
           <td>
             <audio controls src="audio/betty/split0000.wav"></audio>
           </td>
@@ -35,7 +37,8 @@
         </tr>
 
         <tr>
-          <td>cgvctss</td>
+          <td>CGVC TSS</td>
+          <td>de-aging</td>
           <td>
             <audio controls src="audio/betty/split0001.wav"></audio>
           </td>
@@ -45,7 +48,8 @@
         </tr>
 
         <tr>
-          <td>vqvaernd</td>
+          <td>VQVAE RND</td>
+          <td>de-aging</td>
           <td>
             <audio controls src="audio/betty/split0000.wav"></audio>
           </td>
@@ -55,12 +59,57 @@
         </tr>
 
         <tr>
-          <td>vqvaetss</td>
+          <td>VQVAE TSS</td>
+          <td>de-aging</td>
           <td>
             <audio controls src="audio/betty/split0001.wav"></audio>
           </td>
           <td>
             <audio controls src="audio/conv/vqvaetssbe/split0001.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>CGVC RND</td>
+          <td>aging</td>
+          <td>
+            <audio controls src="audio/conv_p234_006.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv_p234_006aged.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>CGVC TSS</td>
+          <td>aging</td>
+          <td>
+            <audio controls src="audio/conv_p264_003.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv_p264_003aged.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>VQVAE RND</td>
+          <td>aging</td>
+          <td>
+            <audio controls src="audio/conv_p240_010.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv_p240_010_23.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>VQVAE TSS</td>
+          <td>aging</td>
+          <td>
+            <audio controls src="audio/conv_p240_011.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv_p240_011_21.wav"></audio>
           </td>
         </tr>
       </table>
