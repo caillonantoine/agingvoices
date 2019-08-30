@@ -2,10 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Deep Learning based voice aging / de-aging</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <title>Deep Learning based voice aging / de-aging</title>
   </head>
   <body>
     <div class="wrapper">
@@ -15,107 +14,52 @@
 
       <p>Four models have been proposed during this internship to achieve voice age conversion, namely CGVC RND, CGVC TSS, VQVAE RND, VQVAE TSS. For confidentiality reasons, we can't explicitely define what those models are made of.</p>
 
+      <div class="demo" id="deaging">
+        <h1 class="title">AGING SAMPLE</h1>
+        <p>SOURCE</p>
+        <audio src="audio/aging/original.wav" class="source_audio" controls>
+        </audio>
 
+        <p>CGVC RND</p>
+        <audio src="audio/aging/cgvcrnd.wav" controls>
+        </audio>
 
-      <table>
-        <tr>
-          <th>MODEL</th>
-          <th>TASK</th>
-          <th>SOURCE</th>
-          <th>CONVERTED</th>
-        </tr>
+        <p>CGVC TSS</p>
+        <audio src="audio/aging/cgvctss.wav" controls>
+        </audio>
 
-        <tr>
-          <td>CGVC RND</td>
-          <td>de-aging</td>
-          <td>
-            <audio controls src="audio/betty/split0000.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv/cgvcrndbe/split0000.wav"></audio>
-          </td>
-        </tr>
+        <p>VQVAE RND</p>
+        <audio src="audio/aging/vqvaernd.wav" controls>
+        </audio>
 
-        <tr>
-          <td>CGVC TSS</td>
-          <td>de-aging</td>
-          <td>
-            <audio controls src="audio/betty/split0001.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv/cgvctssbe/split0001.wav"></audio>
-          </td>
-        </tr>
+        <p>VQVAE TSS</p>
+        <audio src="audio/aging/vqvaetss.wav" controls>
+        </audio>
+      </div>
 
-        <tr>
-          <td>VQVAE RND</td>
-          <td>de-aging</td>
-          <td>
-            <audio controls src="audio/betty/split0000.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv/vqvaerndbe/split0000.wav"></audio>
-          </td>
-        </tr>
+      <div class="demo" id="deaging">
+        <h1 class="title">DE-AGING SAMPLE</h1>
+        <p>SOURCE</p>
+        <audio src="audio/deaging/original.wav" class="source_audio" controls>
+        </audio>
 
-        <tr>
-          <td>VQVAE TSS</td>
-          <td>de-aging</td>
-          <td>
-            <audio controls src="audio/betty/split0001.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv/vqvaetssbe/split0001.wav"></audio>
-          </td>
-        </tr>
+        <p>CGVC RND</p>
+        <audio src="audio/deaging/cgvcrnd.wav" controls>
+        </audio>
 
-        <tr>
-          <td>CGVC RND</td>
-          <td>aging</td>
-          <td>
-            <audio controls src="audio/conv_p234_006.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv_p234_006aged.wav"></audio>
-          </td>
-        </tr>
+        <p>CGVC TSS</p>
+        <audio src="audio/deaging/cgvctss.wav" controls>
+        </audio>
 
-        <tr>
-          <td>CGVC TSS</td>
-          <td>aging</td>
-          <td>
-            <audio controls src="audio/conv_p264_003.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv_p264_003aged.wav"></audio>
-          </td>
-        </tr>
+        <p>VQVAE RND</p>
+        <audio src="audio/deaging/vqvaernd.wav" controls>
+        </audio>
 
-        <tr>
-          <td>VQVAE RND</td>
-          <td>aging</td>
-          <td>
-            <audio controls src="audio/conv_p240_010.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv_p240_010_23.wav"></audio>
-          </td>
-        </tr>
-
-        <tr>
-          <td>VQVAE TSS</td>
-          <td>aging</td>
-          <td>
-            <audio controls src="audio/conv_p240_011.wav"></audio>
-          </td>
-          <td>
-            <audio controls src="audio/conv_p240_011_21.wav"></audio>
-          </td>
-        </tr>
-      </table>
-      <p id="social"><a href="https://github.com/caillonantoine"><i class="fab fa-github"></i></a></p>
+        <p>VQVAE TSS</p>
+        <audio src="audio/deaging/vqvaetss.wav" controls>
+        </audio>
+      </div>
     </div>
-
 
   </body>
 </html>
