@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Deep Learning based voice aging / de-aging</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Deep Learning based voice aging / de-aging <i class="fas fa-child"></i><i class="fas fa-child"></i></h1>
+
+      <p>Additional content for the internship Speech transformation using deep generative models, conducted by <i>A. CAILLON</i>, supervised by <i>A. Ozerov, N. Duong, G. Puy</i></p>
+
+      <p>Four models have been proposed during this internship to achieve voice age conversion, namely CGVC RND, CGVC TSS, VQVAE RND, VQVAE TSS. For confidentiality reasons, we can't explicitely define what those models are made of.</p>
+
+
+
+      <table>
+        <tr>
+          <th>MODEL</th>
+          <th>TASK</th>
+          <th>SOURCE</th>
+          <th>CONVERTED</th>
+        </tr>
+
+        <tr>
+          <td>CGVC RND</td>
+          <td>de-aging</td>
+          <td>
+            <audio controls src="audio/betty/split0000.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv/cgvcrndbe/split0000.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>CGVC TSS</td>
+          <td>de-aging</td>
+          <td>
+            <audio controls src="audio/betty/split0001.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv/cgvctssbe/split0001.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>VQVAE RND</td>
+          <td>de-aging</td>
+          <td>
+            <audio controls src="audio/betty/split0000.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv/vqvaerndbe/split0000.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>VQVAE TSS</td>
+          <td>de-aging</td>
+          <td>
+            <audio controls src="audio/betty/split0001.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv/vqvaetssbe/split0001.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>CGVC RND</td>
+          <td>aging</td>
+          <td>
+            <audio controls src="audio/conv_p234_006.wav"></audio>
+          </td>
+          <td>
+            <audio controls src="audio/conv_p234_006aged.wav"></audio>
+          </td>
+        </tr>
+
+        <tr>
+          <td>CGVC TSS</td>
+          <td>aging</td>
+          <td>
+            <audio controls src="audio/conv_p264_003.wav"></audio>
+    
+
+
+  </body>
+</html>
